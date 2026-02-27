@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cost Continuity Across Enterprise Workflows — Your Name</title>
+  <meta name="description" content="How a unified cost-data layer eliminated reconciliation gaps across five enterprise systems, improving forecast accuracy and reducing manual overhead." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:title"       content="Cost Continuity Across Enterprise Workflows" />
+  <meta property="og:description" content="A platform integration case study: connecting fragmented cost data across enterprise systems." />
+  <meta property="og:url"         content="https://example.com/case-studies/cost-continuity/" />
+
+  <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a href="../../" class="site-nav__brand">Your Name</a>
+      <ul class="site-nav__links" role="list">
+        <li><a href="../../">Home</a></li>
+        <li><a href="../../resume/">Resume</a></li>
+        <li><a href="../../case-studies/" aria-current="page">Case Studies</a></li>
+        <li><a href="../../contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-body">
+    <main>
+      <div class="container">
+        <article class="case-study" aria-labelledby="cs-title">
+
+          <a href="../../case-studies/" class="case-study__back">← All case studies</a>
+
+          <p class="case-study__tag">Platform · Enterprise · Systems Integration</p>
+          <h1 class="case-study__title" id="cs-title">
+            Cost Continuity Across Enterprise Workflows
+          </h1>
+
+          <p class="case-study__overview">
+            Enterprise teams were making financial decisions from contradictory numbers.
+            Procurement, finance, and project management each maintained separate cost
+            records with no reliable way to reconcile them. I led the cross-functional
+            work to define and ship a shared cost-data layer that propagated a single
+            cost record across five connected systems — eliminating the reconciliation
+            burden and creating a foundation for more accurate financial forecasting.
+          </p>
+
+          <!-- The Problem -->
+          <section class="case-study__section" aria-labelledby="problem-heading">
+            <h2 class="case-study__section-title" id="problem-heading">The Problem</h2>
+            <p class="case-study__section-body">
+              Cost data was entered at the point of purchase, again at project kickoff,
+              again during invoicing, and again during close-out reporting. Each team
+              owned a different slice of the process and a different system of record.
+              When costs changed — and they always did — the change rarely propagated
+              cleanly downstream. Finance would close the books on numbers that
+              procurement hadn't yet updated. Project managers were carrying manual
+              spreadsheets to bridge the gap.
+            </p>
+            <p class="case-study__section-body" style="margin-top: 1rem;">
+              The downstream effects were significant: forecasts drifted from actuals,
+              leadership decisions were made on stale data, and finance spent a
+              disproportionate amount of time on reconciliation rather than analysis.
+              No single team owned the problem — each owned one part of it.
+            </p>
+          </section>
+
+          <!-- The Strategy -->
+          <section class="case-study__section" aria-labelledby="strategy-heading">
+            <h2 class="case-study__section-title" id="strategy-heading">The Strategy</h2>
+            <p class="case-study__section-body">
+              Rather than consolidating all systems into one (politically and technically
+              infeasible), the strategy was to define a canonical cost record that each
+              system would read from and write to, rather than maintaining its own. This
+              required agreeing on a shared data model across five teams, each with
+              existing contracts and ingrained workflows.
+            </p>
+            <p class="case-study__section-body" style="margin-top: 1rem;">
+              Getting there required reframing the conversation: this wasn't a technology
+              project, it was an alignment project. Each team needed to see that a shared
+              source of truth benefited them more than owning their own copy. I spent the
+              first two months facilitating that conversation before writing a single
+              product spec.
+            </p>
+          </section>
+
+          <!-- The Execution -->
+          <section class="case-study__section" aria-labelledby="execution-heading">
+            <h2 class="case-study__section-title" id="execution-heading">The Execution</h2>
+            <p class="case-study__section-body">
+              Delivery was phased to reduce risk. Phase one connected procurement and
+              finance — the two systems with the most frequent reconciliation conflicts.
+              We shipped a read-only integration first so finance teams could see
+              procurement data without changing any existing workflows. This built
+              confidence and surfaced edge cases before we rewired any write paths.
+            </p>
+            <p class="case-study__section-body" style="margin-top: 1rem;">
+              Phase two extended the model to project management and invoicing. By this
+              point, the data model was proven and the change-management approach was
+              established. I maintained a working group with leads from each affected
+              team that met bi-weekly throughout delivery, which kept issues from
+              becoming blockers and kept leadership informed without requiring escalation.
+            </p>
+          </section>
+
+          <!-- The Outcome -->
+          <section class="case-study__outcome case-study__section"
+                   aria-labelledby="outcome-heading">
+            <h2 class="case-study__section-title" id="outcome-heading">The Outcome</h2>
+            <p class="case-study__section-body">
+              Finance teams reported a significant reduction in reconciliation time
+              at period close. Forecast accuracy improved because cost changes in
+              procurement now propagated automatically to downstream systems rather
+              than waiting for manual sync. Project managers retired the bridging
+              spreadsheets they had relied on for years. The shared cost layer became
+              a platform primitive that three subsequent initiatives were built on top of
+              — extending its value well beyond the original scope.
+            </p>
+          </section>
+
+          <nav aria-label="Case study navigation" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="../../case-studies/" class="btn btn--outline">← All case studies</a>
+            <a href="../bid-coordination/" class="btn btn--outline">Next: Bid Coordination →</a>
+          </nav>
+
+        </article>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__links">
+          <a href="mailto:you@example.com">you@example.com</a>
+          <a href="https://linkedin.com/in/your-profile"
+             target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p class="site-footer__meta">Senior Product Leader · Northern California</p>
+      </div>
+    </footer>
+
+  </div><!-- /.page-body -->
+</body>
+</html>
