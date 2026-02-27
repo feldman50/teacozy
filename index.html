@@ -1,100 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tea Cozy</title>
-    <link rel="stylesheet" href="content/css/index.css" />
-  </head>
-  <body>
-    <!-- Header / Nav -->
-    <header>
-      <nav>
-        <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png" alt="Tea Cozy Logo" class="logo" />
-        <ul>
-          <li><a href="#mission">Mission</a></li>
-          <li><a href="#featured-teas">Featured Teas</a></li>
-          <li><a href="#locations">Locations</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Main content -->
-    <main>
-      <!-- Mission section -->
-      <section id="mission">
-        <div class="mission-content">
-          <h2>Our Mission</h2>
-          <h3>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h3>
+  <title>Your Name — Senior Product Leader</title>
+  <meta name="description" content="Senior Product Manager based in Northern California, turning fragmented processes into connected systems. Open to Senior Director and Group PM opportunities." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Your Name — Senior Product Leader" />
+  <meta property="og:description" content="Senior Product Manager turning fragmented processes into connected systems. Based in Northern California." />
+  <meta property="og:url"         content="https://example.com/" />
+  <meta property="og:image"       content="https://example.com/assets/og-image.png" />
+
+  <!-- Favicon placeholder — replace with real .ico -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a href="index.html" class="site-nav__brand">Your Name</a>
+      <ul class="site-nav__links" role="list">
+        <li><a href="index.html"       aria-current="page">Home</a></li>
+        <li><a href="resume/">Resume</a></li>
+        <li><a href="case-studies/">Case Studies</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-body">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-headline">
+      <div class="container">
+        <p class="hero__eyebrow">Senior Product Manager</p>
+        <h1 class="hero__headline" id="hero-headline">
+          Senior Product Leader turning fragmented processes into connected systems.
+        </h1>
+        <p class="hero__summary">
+          I build products that turn fragmented processes into connected systems.
+          My work focuses on aligning strategy, teams, and execution around a clear direction.
+          I care about reducing complexity at the system level so organizations can move with
+          focus and confidence. Most recently, I've led large initiatives connecting workflows
+          across enterprise platforms.
+        </p>
+        <p class="hero__location">Based in Northern California.</p>
+        <a href="mailto:you@example.com" class="hero__cta">Email me</a>
+      </div>
+    </section>
+
+    <!-- ===== LEADERSHIP PRINCIPLES ===== -->
+    <section class="principles" aria-labelledby="principles-heading">
+      <div class="container">
+        <h2 class="principles__title" id="principles-heading">
+          How I Think About Product Leadership
+        </h2>
+        <div class="principles__grid">
+
+          <article class="principle">
+            <h3 class="principle__heading">
+              Simple things should be simple, and complex things should be possible.
+            </h3>
+            <p class="principle__body">
+              Good product design doesn't mean hiding complexity — it means managing it
+              so it doesn't block what users need to do. The baseline experience should
+              be effortless. The edge cases should still work.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3 class="principle__heading">Clarity creates momentum.</h3>
+            <p class="principle__body">
+              When a team is uncertain about priorities, they slow down, duplicate work,
+              or hedge their bets. Clear direction — even imperfect direction — allows
+              people to move. I focus on reducing ambiguity before it compounds.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3 class="principle__heading">Alignment is part of the product.</h3>
+            <p class="principle__body">
+              Cross-functional trust isn't overhead — it's load-bearing. Products built
+              without alignment show the cracks: mismatched assumptions, conflicting data
+              models, user experiences that feel stitched together. I treat alignment as
+              a core deliverable.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3 class="principle__heading">Systems outlast features.</h3>
+            <p class="principle__body">
+              Any individual feature has a short shelf life. The architecture underneath —
+              the data models, the integration patterns, the shared workflows — can last
+              for years. I invest in the durable layer so the product can adapt without
+              rebuilding from scratch.
+            </p>
+          </article>
+
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Featured Teas section -->
-      <section id="featured-teas">
-        <h2>Tea of the Month</h2>
-        <h3>What's Steeping at Tea Cozy?</h3>
-        <div class="tea-grid">
-          <figure>
-            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblue.jpg" alt="Berry Blue Tea" />
-            <figcaption>Berry Blue</figcaption>
-          </figure>
-          <figure>
-            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg" alt="Spiced Rum Tea" />
-            <figcaption>Spiced Rum</figcaption>
-          </figure>
-          <figure>
-            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg" alt="Donut Tea" />
-            <figcaption>Donut</figcaption>
-          </figure>
-          <figure>
-            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-coffee.jpg" alt="Coffee Tea" />
-            <figcaption>Coffee</figcaption>
-          </figure>
-          <figure>
-            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-peppermint.jpg" alt="Peppermint Tea" />
-            <figcaption>Peppermint</figcaption>
-          </figure>
-          <figure>
-            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-vanilla-bean.jpg" alt="Vanilla Bean Tea" />
-            <figcaption>Vanilla Bean</figcaption>
-          </figure>
+    <!-- ===== CASE STUDIES PREVIEW ===== -->
+    <section class="case-studies-preview" aria-labelledby="work-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Work</p>
+          <h2 class="section-title" id="work-heading">Selected Case Studies</h2>
+        </header>
+        <div class="cards-grid">
+
+          <article class="card">
+            <p class="card__tag">Platform · Enterprise</p>
+            <h3 class="card__title">Cost Continuity Across Enterprise Workflows</h3>
+            <p class="card__summary">
+              Led cross-functional work to propagate cost context across disconnected
+              enterprise systems, eliminating reconciliation gaps that were slowing
+              financial decisions.
+            </p>
+            <a href="case-studies/cost-continuity/" class="card__link">Read case study →</a>
+          </article>
+
+          <article class="card">
+            <p class="card__tag">Workflow · Visibility</p>
+            <h3 class="card__title">Bid Coordination Through Structured Visibility</h3>
+            <p class="card__summary">
+              Redesigned the bid coordination workflow to give distributed teams
+              shared, real-time visibility into ownership, status, and outstanding
+              decisions.
+            </p>
+            <a href="case-studies/bid-coordination/" class="card__link">Read case study →</a>
+          </article>
+
+          <article class="card">
+            <p class="card__tag">AI · Practical</p>
+            <h3 class="card__title">AI to Reduce Workflow Friction</h3>
+            <p class="card__summary">
+              Introduced targeted AI capabilities to reduce manual effort in
+              high-volume customer-facing workflows, with a focus on trust and
+              reliability over novelty.
+            </p>
+            <a href="case-studies/ai-workflow-friction/" class="card__link">Read case study →</a>
+          </article>
+
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Locations section -->
-      <section id="locations">
-        <h2>Come Visit Us</h2>
-        <div class="locations-grid">
-          <div class="location">
-            <h3>Downtown</h3>
-            <p>384 West 4th St</p>
-            <p>Suite 108</p>
-            <p>Portland, Maine</p>
-          </div>
-          <div class="location">
-            <h3>East Bayside</h3>
-            <p>3433 Phisherman's Avenue</p>
-            <p>(Northwest Corner)</p>
-            <p>Portland, Maine</p>
-          </div>
-          <div class="location">
-            <h3>Oakdale</h3>
-            <p>515 Crescent Avenue</p>
-            <p>Second Floor</p>
-            <p>Portland, Maine</p>
-          </div>
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__links">
+          <a href="mailto:you@example.com">you@example.com</a>
+          <a href="https://linkedin.com/in/your-profile"
+             target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>
-        <a href="#">contact@TeaCozyTea.com</a>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="#">917-555-8904</a>
-      </p>
-      <p>copyright Tea Cozy 2019</p>
+        <p class="site-footer__meta">Senior Product Leader · Northern California</p>
+      </div>
     </footer>
-  </body>
+
+  </div><!-- /.page-body -->
+</body>
 </html>

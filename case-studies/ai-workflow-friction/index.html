@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AI to Reduce Workflow Friction — Your Name</title>
+  <meta name="description" content="How targeted, trust-first AI reduced manual effort in customer-facing workflows without introducing new complexity or failure modes." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:title"       content="AI to Reduce Workflow Friction" />
+  <meta property="og:description" content="A practical AI case study: reducing workflow friction through targeted automation, with a focus on trust and reliability over novelty." />
+  <meta property="og:url"         content="https://example.com/case-studies/ai-workflow-friction/" />
+
+  <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a href="../../" class="site-nav__brand">Your Name</a>
+      <ul class="site-nav__links" role="list">
+        <li><a href="../../">Home</a></li>
+        <li><a href="../../resume/">Resume</a></li>
+        <li><a href="../../case-studies/" aria-current="page">Case Studies</a></li>
+        <li><a href="../../contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-body">
+    <main>
+      <div class="container">
+        <article class="case-study" aria-labelledby="cs-title">
+
+          <a href="../../case-studies/" class="case-study__back">← All case studies</a>
+
+          <p class="case-study__tag">AI · Practical · Customer-Facing</p>
+          <h1 class="case-study__title" id="cs-title">
+            AI to Reduce Workflow Friction
+          </h1>
+
+          <p class="case-study__overview">
+            High-volume, repetitive classification and routing tasks were creating a
+            sustained bottleneck in a customer-facing workflow. The instinct was to
+            automate — but automation without trust would create a different kind of
+            problem. I led the initiative to introduce AI assistance into this workflow
+            in a way that reduced friction without trading reliability for speed. The
+            approach was disciplined: identify where AI confidence was high, make
+            failure visible and recoverable, and earn user trust incrementally before
+            increasing automation scope.
+          </p>
+
+          <!-- The Problem -->
+          <section class="case-study__section" aria-labelledby="problem-heading">
+            <h2 class="case-study__section-title" id="problem-heading">The Problem</h2>
+            <p class="case-study__section-body">
+              Customer-submitted requests required manual classification before they
+              could be routed to the right team. Volume was high, variance was broad,
+              and the classification criteria had accumulated years of informal edge
+              cases. Experienced staff handled it well; newer staff needed significant
+              training time and still made classification errors that caused delays
+              downstream.
+            </p>
+            <p class="case-study__section-body" style="margin-top: 1rem;">
+              The bottleneck was expensive in two ways: it slowed response time for
+              customers and it required a disproportionate share of experienced staff
+              time on a task that didn't require judgment in most cases. The 20% of
+              requests that needed real judgment were consuming the same processing
+              overhead as the 80% that were straightforward.
+            </p>
+          </section>
+
+          <!-- The Strategy -->
+          <section class="case-study__section" aria-labelledby="strategy-heading">
+            <h2 class="case-study__section-title" id="strategy-heading">The Strategy</h2>
+            <p class="case-study__section-body">
+              The strategy was constrained from the start: AI assistance only, not
+              AI replacement. The goal was to let AI handle high-confidence, routine
+              cases and surface low-confidence or ambiguous cases for human review
+              — clearly, with enough context for the reviewer to make a fast decision.
+            </p>
+            <p class="case-study__section-body" style="margin-top: 1rem;">
+              This framing mattered for user acceptance. Staff were skeptical —
+              reasonably so, given that errors in classification had real consequences
+              for customers. Rather than asserting that the AI would be accurate, we
+              made accuracy measurable and visible from the start. Users could see
+              confidence scores, disagree with suggestions, and flag patterns the model
+              was getting consistently wrong. Their corrections fed the improvement cycle.
+            </p>
+          </section>
+
+          <!-- The Execution -->
+          <section class="case-study__section" aria-labelledby="execution-heading">
+            <h2 class="case-study__section-title" id="execution-heading">The Execution</h2>
+            <p class="case-study__section-body">
+              The first phase was observation only — the model ran in shadow mode alongside
+              the existing manual process for eight weeks. We measured agreement rate
+              between AI suggestions and human decisions, identified the request types
+              where AI confidence was consistently high, and found the categories where
+              the model needed more signal.
+            </p>
+            <p class="case-study__section-body" style="margin-top: 1rem;">
+              Phase two introduced AI suggestions as visible recommendations in the
+              review interface, with confidence indicators and a one-click override.
+              Users saw the suggestion and made the final call. This built familiarity
+              and generated correction data simultaneously.
+            </p>
+            <p class="case-study__section-body" style="margin-top: 1rem;">
+              Phase three enabled auto-routing for the subset of request types where
+              model confidence exceeded a validated threshold and historical override
+              rates were low. Auto-routed requests remained auditable and reversible.
+              The threshold for auto-routing was set conservatively and reviewed
+              quarterly with the operations team.
+            </p>
+          </section>
+
+          <!-- The Outcome -->
+          <section class="case-study__outcome case-study__section"
+                   aria-labelledby="outcome-heading">
+            <h2 class="case-study__section-title" id="outcome-heading">The Outcome</h2>
+            <p class="case-study__section-body">
+              Manual review time per request dropped meaningfully for the high-confidence
+              categories, freeing experienced staff to focus on the complex cases that
+              actually required judgment. Customer response time improved in the categories
+              where auto-routing was enabled. Error rates remained low — importantly, lower
+              than the manual-only baseline for the auto-routed subset — because the model
+              was consistently handling the cases it was well-suited for. Staff reported
+              higher satisfaction with the tool than expected, attributing it to the
+              transparency of the confidence scoring and the retained ability to override.
+            </p>
+          </section>
+
+          <nav aria-label="Case study navigation" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="../bid-coordination/" class="btn btn--outline">← Bid Coordination</a>
+            <a href="../../case-studies/" class="btn btn--outline">All case studies →</a>
+          </nav>
+
+        </article>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__links">
+          <a href="mailto:you@example.com">you@example.com</a>
+          <a href="https://linkedin.com/in/your-profile"
+             target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p class="site-footer__meta">Senior Product Leader · Northern California</p>
+      </div>
+    </footer>
+
+  </div><!-- /.page-body -->
+</body>
+</html>
